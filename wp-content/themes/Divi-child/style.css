@@ -1,0 +1,160 @@
+/*
+ Theme Name:     Divi Child
+ Theme URI:      https://www.elegantthemes.com/gallery/divi/
+ Description:    Divi Child Theme
+ Author:         Elegant Themes
+ Author URI:     https://www.elegantthemes.com
+ Template:       Divi
+ Version:        1.0.0
+*/
+ 
+ 
+/* =Theme customization starts here
+------------------------------------------------------- */
+/*Menghilangkan garis abu2 pada header*/
+/*header#main-header.et-fixed-header, #main-header{
+	-webkit-box-shadow:none !important;
+	-moz-box-shadow:none !important;
+	box-shadow:none !important;
+}*/
+
+/****** Add overlay to parallax sections *******/
+/*
+.gradient-overlay:before {
+content:"";
+position:absolute;
+z-index:1;
+background:inherit;
+top:0;
+bottom:0;
+width:100%;
+}
+.gradient-overlay .et_pb_row {
+z-index:2 !important;
+}
+.gradient-overlay {
+background-color: transparent;
+}
+*/
+
+/*Select page*/
+@media only screen and (max-width: 980px){
+	.et_header_style_centered .mobile_nav .select_page{
+		color:rgba(24, 23, 35, 0.48)!important;
+	}
+}
+
+/*Drop down menu seragam*/
+.et_mobile_menu .menu-item-has-children>a {
+    background-color: rgba(255, 255, 255, 0);
+    font-weight: 600;
+}
+
+/*Pengaturan halaman utama*/
+.home #main-header {
+	background-color:#ffffff00!important;
+}
+
+.home #main-header {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0);
+}
+
+.home #top-menu li.current-menu-item>a, .home #top-menu>li>a{
+	color: #ffffff;
+}
+
+.home .et_nav_text_color_dark .et_mobile_menu li a{
+	color: #006799;
+}
+
+.home #main-header.et-fixed-header{
+	background-color:#ffffff!important;
+}
+
+@media (max-width:980px){
+	.home #main-header.et-fixed-header{
+		background-color:#ffffff00!important;
+	}
+}
+
+/*Warna burger*/
+.mobile_menu_bar:before{
+    color: rgba(10, 81, 128, 0.82)!important;
+}
+ 
+/*Blurb animation*/
+.et_pb_row_1 .et_pb_blurb:hover {
+	transform: scale(1.02);
+	box-shadow: 0px 10px 22px #e8e8e8;
+	background-color: #ffffff!important;
+}
+
+.et_pb_blurb:hover h2 {
+	color: #3478a5;
+}
+
+/*Blurb button*/
+.et_pb_blurb_description .et_pb_button{
+	align-content:center;
+	cursor: pointer;
+    background-color: #4ec6f7;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white!important;
+    padding: 10px;
+    width: 150px!important;
+    margin-top: 25px;
+    text-decoration: none;
+    line-height: 65px;
+    transition: .2s;
+	font-family:"Open Sans",Arial,sans-serif;
+}
+
+.et_pb_blurb_description .et_pb_button:hover{
+	align-content:center;
+	border-radius: 10px;
+	padding: 10px;
+	width: 150px!important;
+	line-height: 65px;
+	background-color: white;
+    border: 2px solid #4ec6f7;
+    color: #4ec6f7!important;
+	font-family:"Open Sans",Arial,sans-serif;
+}
+
+/*Homepage button*/
+.et_pb_button_2 , .et_pb_button_3 {
+    width: 80%!important
+}
+
+/*Footer Icons*/
+.et_pb_text_inner .et-pb-icon {
+	display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: ETmodules;
+    font-size: 29px;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1;
+    text-transform: none;
+    content: attr(data-icon);
+    speak: none;
+}
+.et_pb_text_inner .et-pb-icon-1{
+	color:white;
+}
+.et_pb_text_inner .et-pb-icon-2{
+	color:white;
+}
+.et_pb_text_inner .et-pb-icon-3{
+	color:white;
+}
+
+/*Warna arrow pada galeri*/
+.et-pb-arrow-next:before, .et-pb-arrow-prev:before {
+    color: white;
+}
